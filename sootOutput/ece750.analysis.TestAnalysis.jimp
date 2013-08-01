@@ -1,0 +1,55 @@
+public class ece750.analysis.TestAnalysis extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int a, b, c, temp$0, temp$1, temp$2;
+
+        args := @parameter0;
+        a = 1;
+        b = 2;
+        if a == 1 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = 1;
+        c = temp$0;
+        goto label5;
+
+     label1:
+        nop;
+        if b == 2 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        temp$1 = 1;
+        c = temp$1;
+        goto label4;
+
+     label3:
+        nop;
+        temp$2 = 0;
+        c = temp$2;
+
+     label4:
+        nop;
+
+     label5:
+        nop;
+        return;
+    }
+
+    public void <init>()
+    {
+        ece750.analysis.TestAnalysis this;
+
+        this := @this;
+        specialinvoke this.<init>();
+        return;
+    }
+}

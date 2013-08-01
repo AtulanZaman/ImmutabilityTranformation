@@ -1,0 +1,62 @@
+public class ece750.immutable.atulan.ObjectImmutable extends java.lang.Object
+{
+    public final org.parboiled.common.ImmutableList tokens;
+
+    public void <init>()
+    {
+        ece750.immutable.atulan.ObjectImmutable this;
+        org.parboiled.common.ImmutableList temp$0, temp$1;
+
+        this := @this: ece750.immutable.atulan.ObjectImmutable;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = staticinvoke <org.parboiled.common.ImmutableList: org.parboiled.common.ImmutableList of()>();
+        temp$1 = (org.parboiled.common.ImmutableList) temp$0;
+        this.<ece750.immutable.atulan.ObjectImmutable: org.parboiled.common.ImmutableList tokens> = temp$1;
+        return;
+    }
+
+    public void <init>(org.parboiled.common.ImmutableList)
+    {
+        ece750.immutable.atulan.ObjectImmutable this;
+        org.parboiled.common.ImmutableList tokens;
+
+        this := @this: ece750.immutable.atulan.ObjectImmutable;
+        tokens := @parameter0: org.parboiled.common.ImmutableList;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<ece750.immutable.atulan.ObjectImmutable: org.parboiled.common.ImmutableList tokens> = tokens;
+        return;
+    }
+
+    public ece750.immutable.atulan.ObjectImmutable append(java.lang.String)
+    {
+        ece750.immutable.atulan.ObjectImmutable this, temp$0;
+        java.lang.String token;
+        org.parboiled.common.ImmutableList temp$1, temp$2, temp$3;
+
+        this := @this: ece750.immutable.atulan.ObjectImmutable;
+        token := @parameter0: java.lang.String;
+        temp$0 = new ece750.immutable.atulan.ObjectImmutable;
+        temp$1 = this.<ece750.immutable.atulan.ObjectImmutable: org.parboiled.common.ImmutableList tokens>;
+        temp$2 = virtualinvoke temp$1.<org.parboiled.common.ImmutableList: org.parboiled.common.ImmutableList append(java.lang.Object)>(token);
+        temp$3 = (org.parboiled.common.ImmutableList) temp$2;
+        specialinvoke temp$0.<ece750.immutable.atulan.ObjectImmutable: void <init>(org.parboiled.common.ImmutableList)>(temp$3);
+        return temp$0;
+    }
+
+    public java.lang.String toString()
+    {
+        ece750.immutable.atulan.ObjectImmutable this;
+        java.lang.StringBuffer temp$0;
+        org.parboiled.common.ImmutableList temp$1;
+        java.lang.String temp$2;
+
+        this := @this: ece750.immutable.atulan.ObjectImmutable;
+        temp$0 = new java.lang.StringBuffer;
+        specialinvoke temp$0.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("ObjectImmutable: ");
+        temp$1 = this.<ece750.immutable.atulan.ObjectImmutable: org.parboiled.common.ImmutableList tokens>;
+        virtualinvoke temp$0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$1);
+        temp$2 = virtualinvoke temp$0.<java.lang.StringBuffer: java.lang.String toString()>();
+        return temp$2;
+    }
+}

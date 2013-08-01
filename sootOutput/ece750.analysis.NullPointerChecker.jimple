@@ -1,0 +1,34 @@
+public class ece750.analysis.NullPointerChecker extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        java.lang.Object foo;
+        java.io.PrintStream temp$0;
+
+        args := @parameter0: java.lang.String[];
+        foo = null;
+        if foo != null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("Yay! Im not null");
+
+     label1:
+        nop;
+        return;
+    }
+
+    public void <init>()
+    {
+        ece750.analysis.NullPointerChecker this;
+
+        this := @this: ece750.analysis.NullPointerChecker;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

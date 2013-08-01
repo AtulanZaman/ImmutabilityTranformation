@@ -1,0 +1,33 @@
+public final class ece750.immutable.atulan.ClientNoEscape extends java.lang.Object
+{
+
+    public static final void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        ece750.immutable.atulan.ObjectImmutable a, temp$0, temp$1, temp$2, temp$3;
+        java.io.PrintStream temp$4;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = new ece750.immutable.atulan.ObjectImmutable;
+        specialinvoke temp$0.<ece750.immutable.atulan.ObjectImmutable: void <init>()>();
+        a = temp$0;
+        temp$1 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("x");
+        a = temp$1;
+        temp$2 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("y");
+        a = temp$2;
+        temp$3 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("z");
+        a = temp$3;
+        temp$4 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$4.<java.io.PrintStream: void println(java.lang.Object)>(a);
+        return;
+    }
+
+    public void <init>()
+    {
+        ece750.immutable.atulan.ClientNoEscape this;
+
+        this := @this: ece750.immutable.atulan.ClientNoEscape;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

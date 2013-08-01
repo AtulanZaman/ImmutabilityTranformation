@@ -1,0 +1,96 @@
+public final class ece750.immutable.atulan.ClientEscape extends java.lang.Object
+{
+    static java.lang.Object escaper;
+
+    static void <clinit>()
+    {
+        java.lang.Object temp$0;
+
+        temp$0 = null;
+        <ece750.immutable.atulan.ClientEscape: java.lang.Object escaper> = temp$0;
+        return;
+    }
+
+    static final void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        ece750.immutable.atulan.ObjectImmutable a, temp$0, temp$1, temp$2, temp$3;
+        java.io.PrintStream temp$4, temp$5;
+        java.lang.Object temp$6;
+
+        args := @parameter0: java.lang.String[];
+        temp$0 = new ece750.immutable.atulan.ObjectImmutable;
+        specialinvoke temp$0.<ece750.immutable.atulan.ObjectImmutable: void <init>()>();
+        a = temp$0;
+        staticinvoke <ece750.immutable.atulan.ClientEscape: void escape(java.lang.Object)>(a);
+        temp$1 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("x");
+        a = temp$1;
+        temp$2 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("y");
+        a = temp$2;
+        temp$3 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("z");
+        a = temp$3;
+        temp$4 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$4.<java.io.PrintStream: void println(java.lang.Object)>(a);
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        temp$6 = <ece750.immutable.atulan.ClientEscape: java.lang.Object escaper>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.Object)>(temp$6);
+        return;
+    }
+
+    public static final void escape(java.lang.Object)
+    {
+        java.lang.Object o;
+
+        o := @parameter0: java.lang.Object;
+        <ece750.immutable.atulan.ClientEscape: java.lang.Object escaper> = o;
+        return;
+
+        return;
+    }
+
+    public final void testMethod()
+    {
+        ece750.immutable.atulan.ClientEscape this;
+        ece750.immutable.atulan.ObjectImmutable a, temp$0, temp$1, b, temp$2, temp$3, temp$4;
+        java.io.PrintStream temp$5;
+
+        this := @this: ece750.immutable.atulan.ClientEscape;
+        temp$0 = new ece750.immutable.atulan.ObjectImmutable;
+        specialinvoke temp$0.<ece750.immutable.atulan.ObjectImmutable: void <init>()>();
+        a = temp$0;
+        temp$1 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("a");
+        a = temp$1;
+        temp$2 = new ece750.immutable.atulan.ObjectImmutable;
+        specialinvoke temp$2.<ece750.immutable.atulan.ObjectImmutable: void <init>()>();
+        b = temp$2;
+        temp$3 = virtualinvoke this.<ece750.immutable.atulan.ClientEscape: ece750.immutable.atulan.ObjectImmutable escapewithreturn(ece750.immutable.atulan.ObjectImmutable)>(a);
+        b = temp$3;
+        temp$4 = virtualinvoke a.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("c");
+        a = temp$4;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.Object)>(a);
+        return;
+    }
+
+    public final ece750.immutable.atulan.ObjectImmutable escapewithreturn(ece750.immutable.atulan.ObjectImmutable)
+    {
+        ece750.immutable.atulan.ClientEscape this;
+        ece750.immutable.atulan.ObjectImmutable a, o, temp$0;
+
+        this := @this: ece750.immutable.atulan.ClientEscape;
+        a := @parameter0: ece750.immutable.atulan.ObjectImmutable;
+        o = a;
+        temp$0 = virtualinvoke o.<ece750.immutable.atulan.ObjectImmutable: ece750.immutable.atulan.ObjectImmutable append(java.lang.String)>("b");
+        o = temp$0;
+        return o;
+    }
+
+    public void <init>()
+    {
+        ece750.immutable.atulan.ClientEscape this;
+
+        this := @this: ece750.immutable.atulan.ClientEscape;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}
